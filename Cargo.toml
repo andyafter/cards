@@ -1,0 +1,22 @@
+[package]
+name = "fast-cards"
+version = "0.1.0"
+edition = "2021"
+description = "Fast poker cards module extracted from robopoker"
+license = "MIT"
+
+[lib]
+name = "fast_cards"
+path = "src/lib.rs"
+
+[[bin]]
+name = "fast-cards-demo"
+path = "src/main.rs"
+
+[features]
+default = []
+shortdeck = []
+
+[dependencies]
+rand = "0.9.1"
+
